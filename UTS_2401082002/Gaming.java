@@ -25,4 +25,13 @@ public int getRefreshRate(){
 public void setRefreshRate(int refreshRate){
     this.refreshRate=refreshRate;
 }
+public String display(){
+    String merek = super.getMerek();
+    int tahunProduksi = super.getTahunProduksi();
+    int garansi = super.getGaransi();
+    int ukuranLayar = super.getUkuranLayar();
+    int kapasitasRAM = super.getKapasitasRAM();
+        
+    return merek + " | " + tahunProduksi + " | " + garansi + " | " + ukuranLayar + " | " + kapasitasRAM + " | " + kartuGrafis + " | " + refreshRate;
+    }
 }

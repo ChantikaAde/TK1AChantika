@@ -24,4 +24,12 @@ public int getKapasitasRAM(){
 public void setKapasitasRAM(int kapasitasRAM){
     this.kapasitasRAM=kapasitasRAM;
 }
+    public String display(){
+        String merek = super.getMerek();
+        int tahunProduksi = super.getTahunProduksi();
+        int garansi = super.getGaransi();
+        
+        return merek + " | " + tahunProduksi + " | " + garansi + " | " + ukuranLayar + " | " + kapasitasRAM;
+    }
 }
+
